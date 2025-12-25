@@ -6,21 +6,33 @@ import {
 } from 'react-router-dom';
 import Example from './components/Example';
 
-
 function App() {
   return (
     <div className={styles.app}>
-      <Link
-        to={'/example'}
-      >
-        Go to /example
-      </Link>
-      <Routes>
-        <Route
-          path="/example"
-          element={<Example />}
-        />
-      </Routes>
+      <div className={styles.navbar}>
+        <Link
+          to={'/example1'}
+        >
+          /example1
+        </Link>
+        <Link
+          to={'/example2'}
+        >
+          /example2
+        </Link>
+      </div>
+      <div className={styles.content}>
+        <Routes>
+          <Route
+            path="/example1"
+            element={<Example index={1} />}
+          />
+          <Route
+            path="/example2"
+            element={<Example index={2} />}
+          />
+        </Routes>
+      </div>
     </div>
   )
 }
