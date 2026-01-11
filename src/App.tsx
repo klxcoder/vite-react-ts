@@ -5,6 +5,7 @@ import {
   Routes,
 } from 'react-router-dom';
 import Example1 from './components/Example1/Example1';
+import Example2 from './components/Example2/Example2';
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
           />
           <Route
             path="/example2"
-            element={<Example1 />}
+            element={<Example2 />}
           />
         </Routes>
       </div>
