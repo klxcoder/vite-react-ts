@@ -4,7 +4,7 @@ import {
   Route,
   Routes,
 } from 'react-router-dom';
-import Example from './components/Example';
+import Example from './components/Example1/Example';
 
 function App() {
   return (
