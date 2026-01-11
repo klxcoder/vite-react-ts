@@ -4,7 +4,7 @@ import {
   Route,
   Routes,
 } from 'react-router-dom';
-import Example from './components/Example1/Example';
+import Example1 from './components/Example1/Example1';
 
 function App() {
   return (
@@ -25,11 +25,11 @@ function App() {
         <Routes>
           <Route
             path="/example1"
-            element={<Example index={1} />}
+            element={<Example1 />}
           />
           <Route
             path="/example2"
-            element={<Example index={2} />}
+            element={<Example1 />}
           />
         </Routes>
       </div>
