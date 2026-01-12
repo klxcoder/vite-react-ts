@@ -1,9 +1,10 @@
 name: Deploy Vite.js App
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch: {} # run only when you click "GitHub → Actions → Run workflow"
+  # push: # run when push to main branch
+  #   branches:
+  #     - main
 
 jobs:
   build-and-deploy:
